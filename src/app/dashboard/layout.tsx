@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { supabase } from '@/lib/supabase';
@@ -121,7 +121,13 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         {/* Decorative background glows */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
         <div className="max-w-6xl mx-auto w-full">
-          {children}
+          <Suspense fallback={
+            <div className="p-12 text-slate-500 animate-pulse">
+              Loading dashboard section...
+            </div>
+          }>
+            {children}
+          </Suspense>
         </div>
       </main>
     </div>
