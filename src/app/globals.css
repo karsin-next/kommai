@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kommai Teal Accent (Nextblaze theme) */
+  --color-primary-50: #f0fdfa;
+  --color-primary-100: #ccfbf1;
+  --color-primary-200: #99f6e4;
+  --color-primary-300: #5eead4;
+  --color-primary-400: #2dd4bf;
+  --color-primary-500: #0d9488; /* Main Accent Highlight */
+  --color-primary-600: #0f766e; /* Hover state */
+  --color-primary-700: #115e59;
+  --color-primary-800: #134e4a;
+  --color-primary-900: #14532d; /* Teal dark */
+  --color-primary-950: #042f2e;
+
+  /* Deep Dark Nextblaze Background Scale */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1a2424; /* Elevated Card */
+  --color-slate-900: #111818; /* Section Card */
+  --color-slate-950: #0a0f0f; /* Main Deep Dark Background */
+}
+
+@layer base {
+  :root {
+    --foreground-rgb: 248, 250, 252;
+    --background-start-rgb: 10, 15, 15; /* #0a0f0f */
+    --background-end-rgb: 17, 24, 24;   /* #111818 */
+  }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        rgb(var(--background-start-rgb)),
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass {
+    @apply bg-slate-900/60 backdrop-blur-lg border border-slate-800/60 shadow-2xl;
+  }
+  .glass-card {
+    @apply bg-slate-900/40 backdrop-blur-md border border-slate-800/60 shadow-xl rounded-3xl;
+  }
+}
+

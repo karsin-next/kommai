@@ -1,0 +1,156 @@
+{
+  "common": {
+    "try_free": "Start Free Setup — 10 Min",
+    "ready_to_start": "Ready to automate? Click here for a free setup.",
+    "login": "Login",
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "bookings": "Bookings",
+    "customers": "Customers",
+    "upgrade": "Upgrade Plan",
+    "save_changes": "Save Changes"
+  },
+  "hero": {
+    "tagline": "Forever Free for Up to 25 Customers",
+    "headline": "Your Free WhatsApp Receptionist",
+    "subheadline": "Automate bookings, collect secure deposits, and send zero-effort reminders directly through WhatsApp. Let Kommai engage your customers 24/7 on auto-pilot."
+  },
+  "social_proof": {
+    "title": "TRUSTED BY 2,400+ GROWTH-MINDED BUSINESS OWNERS",
+    "live_bookings": "Live booking completed {{time}} ago for {{service}}",
+    "metric_bookings": "2.1M+ Bookings Automated",
+    "metric_noshow": "99.4% Drop in No-Shows"
+  },
+  "dashboard_preview": {
+    "title": "Real-Time Automation Dashboard",
+    "subtitle": "Watch your business run on autopilot. See bookings, deposits, and chat statistics update in real-time.",
+    "autopilot": "Auto-pilot active",
+    "bookings_today": "Today's Bookings",
+    "deposits_collected": "Deposits Collected",
+    "messages_handled": "Automated Chats",
+    "conversion_rate": "Booking Rate"
+  },
+  "how_it_works": {
+    "title": "3 Simple Steps to Automation",
+    "step1_title": "1. Connect Your Number",
+    "step1_desc": "Securely link your official WhatsApp Business number in under 10 minutes.",
+    "step2_title": "2. Add Your Services",
+    "step2_desc": "Define your operational hours, services, pricing, and deposit rules.",
+    "step3_title": "3. Watch Bookings Roll In",
+    "step3_desc": "Our AI engages customers 24/7, schedules slots, handles conflicts, and secures payments."
+  },
+  "features_section": {
+    "title": "Everything You Need to Run on Autopilot",
+    "subtitle": "Stop losing sleep over missed messages and no-shows. Let our system handle the heavy lifting.",
+    "ai": {
+      "title": "Smart Autoreplies",
+      "desc": "Replies instantly to queries in English, Malay, or Chinese. Books slots and coordinates like a real receptionist."
+    },
+    "payments": {
+      "title": "Instant Deposit Collection",
+      "desc": "Automatically sends payment links. Confirms bookings only after deposit is paid to secure your time."
+    },
+    "reminders": {
+      "title": "Automatic Reminders",
+      "desc": "Sends friendly reminders 24 hours before the appointment so customers never forget to show up."
+    },
+    "sync": {
+      "title": "Auto Google Sheets Sync",
+      "desc": "Syncs every booking instantly to Google Sheets. You and your team always see the latest schedule."
+    },
+    "human": {
+      "title": "Smart Human Handoff",
+      "desc": "Alerts you instantly on your phone when a customer asks a complex question, so you can take over."
+    },
+    "analytics": {
+      "title": "Real-Time Tracking",
+      "desc": "Monitor your sales, bookings, and customer details instantly from your simple dashboard."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "recommended": "Most Popular",
+    "free_name": "Starter",
+    "free_price": "RM0",
+    "free_features": [
+      "Up to 25 unique customers",
+      "Unlimited automated chats",
+      "Instant deposit collection",
+      "Real-time Google Sheets sync",
+      "10-minute automated setup"
+    ],
+    "pro_name": "Growth Pro",
+    "pro_price": "RM79",
+    "pro_period": "/month",
+    "pro_features": [
+      "Unlimited unique customers",
+      "Unlimited automated bookings",
+      "Custom AI chatbot personality",
+      "Priority human handoff alerts",
+      "Dedicated multi-agent dashboard",
+      "24/7 VIP technical support"
+    ]
+  },
+  "why_whatsapp": {
+    "title": "Why WhatsApp is Your Best Sales Channel",
+    "stat_rate": "98%",
+    "stat_rate_desc": "Message Open Rate",
+    "stat_conv": "3x",
+    "stat_conv_desc": "Higher conversion than email",
+    "stat_speed": "60s",
+    "stat_speed_desc": "Average response time"
+  },
+  "referral": {
+    "title": "Kommai Partner Program",
+    "subtitle": "Get Paid 20% Lifetime Commission",
+    "desc": "Invite other business owners to Kommai. Every time they pay for Pro, you get a 20% cash commission, every single month. No limits, no caps.",
+    "cta": "Get Your Partner Link"
+  },
+  "testimonials": {
+    "title": "What Business Owners Say About Kommai",
+    "1": {
+      "quote": "Kommai is like having a full-time receptionist that works 24/7 for free. We used to spend hours replying to bookings at night, now it is completely automated.",
+      "author": "Sarah Lim",
+      "role": "Spa Owner"
+    },
+    "2": {
+      "quote": "Since collecting deposits with Kommai, our no-shows dropped to absolute zero. It saved us thousands of ringgit in lost hours.",
+      "author": "Ahmad Ridzuan",
+      "role": "Automotive Workshop Owner"
+    },
+    "3": {
+      "quote": "The translation is extremely accurate. Our Chinese-speaking customers chat normally, and the system books them correctly without issues.",
+      "author": "Michelle Chen",
+      "role": "Hair Salon Manager"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "Is it really free for 25 customers?",
+    "a1": "Yes! Absolutely free. We do not block your existing customers, and you can manage up to 25 unique customer profiles forever without paying a single cent.",
+    "q2": "How are deposit payments processed?",
+    "a2": "Kommai integrates with secure payment gateways like Billplz. The funds are paid directly into your own bank account. We never touch or hold your money.",
+    "q3": "Do I need to install any apps or have coding skills?",
+    "a3": "No coding skills required! You can connect your number and set up your business schedule in under 10 minutes using our simple web dashboard."
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {{name}}",
+    "stat_customers": "Unique Customers",
+    "stat_today": "Today's Bookings",
+    "stat_upcoming": "Upcoming Bookings",
+    "stat_deposits": "Deposits Collected",
+    "unlimited": "Unlimited",
+    "recent_bookings": "Recent Appointments",
+    "view_all": "View All"
+  },
+  "mockup": {
+    "welcome": "Hi there! Welcome. How can I help you today?",
+    "customer_msg": "Hi! Do you have any slots available for a 2-hour session tomorrow at 3 PM?"
+  },
+  "templates_page": {
+    "title": "Free WhatsApp Booking Templates",
+    "subtitle": "Copy, paste, and start automating today.",
+    "copy_btn": "Copy Template"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "common": {
+    "try_free": "开始免费设置 — 10分钟",
+    "ready_to_start": "准备好实现自动化了吗？点击此处免费设置。",
+    "login": "登录",
+    "logout": "登出",
+    "dashboard": "控制台",
+    "settings": "设置",
+    "bookings": "预约",
+    "customers": "客户",
+    "upgrade": "升级计划",
+    "save_changes": "保存修改"
+  },
+  "hero": {
+    "tagline": "前25位客户永久免费",
+    "headline": "您的免费 WhatsApp 智能前台",
+    "subheadline": "在 WhatsApp 中全自动处理预约、收取安全订金，并自动发送温馨提醒。让 Kommai 成为您 24/7 全天候运行的智能助理。"
+  },
+  "social_proof": {
+    "title": "深受 2,400+ 位本土企业家信赖",
+    "live_bookings": "实时预约：{{time}}前完成的{{service}}预约",
+    "metric_bookings": "已自动处理 210 万+ 预约",
+    "metric_noshow": "未到店率降低 99.4%"
+  },
+  "dashboard_preview": {
+    "title": "实时自动化控制台",
+    "subtitle": "见证您的业务自动运转。实时查看预约、订金和聊天统计数据的更新。",
+    "autopilot": "自动运行中",
+    "bookings_today": "今日预约",
+    "deposits_collected": "已收订金",
+    "messages_handled": "自动聊天",
+    "conversion_rate": "预约转换率"
+  },
+  "how_it_works": {
+    "title": "只需3步，开启自动化流程",
+    "step1_title": "1. 绑定您的号码",
+    "step1_desc": "在10分钟内安全地连接您的官方 WhatsApp 商业服务号。",
+    "step2_title": "2. 添加您的服务",
+    "step2_desc": "设置您的工作时间、服务项目、价格及订金规则。",
+    "step3_title": "3. 见证预约滚滚而来",
+    "step3_desc": "我们的 AI 将 24/7 全天候与客户互动，安排时间、避开冲突并收取订金。"
+  },
+  "features_section": {
+    "title": "全自动运行所需的一切功能",
+    "subtitle": "不再为遗漏消息和客户爽约而烦恼。让我们的系统为您代劳。",
+    "ai": {
+      "title": "智能自动回复",
+      "desc": "以英文、马来文或中文立即回复咨询。像真人前台一样安排预约和协调时间。"
+    },
+    "payments": {
+      "title": "即时收取订金",
+      "desc": "自动发送付款链接。只有在支付订金后才会确认预约，保障您的时间价值。"
+    },
+    "reminders": {
+      "title": "自动温馨提醒",
+      "desc": "在预约前 24 小时自动发送 WhatsApp 提醒，防止客户忘记行程。"
+    },
+    "sync": {
+      "title": "谷歌表格自动同步",
+      "desc": "将每次新预约即时同步到谷歌表格 (Google Sheets)。您和团队随时掌握最新日程。"
+    },
+    "human": {
+      "title": "智能人工接管",
+      "desc": "当客户询问复杂问题时，立即在手机上通知您，以便您随时介入和人工回复。"
+    },
+    "analytics": {
+      "title": "实时数据追踪",
+      "desc": "从简易的控制台中，随时随地监控您的销售额、预约量和客户详情。"
+    }
+  },
+  "pricing": {
+    "title": "简单透明的定价体系",
+    "recommended": "最受欢迎",
+    "free_name": "体验版 Starter",
+    "free_price": "RM0",
+    "free_features": [
+      "最多 25 位独立客户",
+      "无限量自动聊天",
+      "即时订金支付链接",
+      "实时谷歌表格同步",
+      "10分钟内全自动设置"
+    ],
+    "pro_name": "成长版 Growth Pro",
+    "pro_price": "RM79",
+    "pro_period": "/月",
+    "pro_features": [
+      "无限量独立客户",
+      "无限量自动预约",
+      "定制专属 AI 聊天个性",
+      "优先人工接管提醒",
+      "多座席专属商户控制台",
+      "24/7 VIP 技术支持服务"
+    ]
+  },
+  "why_whatsapp": {
+    "title": "为什么 WhatsApp 是您最佳的销售渠道",
+    "stat_rate": "98%",
+    "stat_rate_desc": "消息阅读率",
+    "stat_conv": "3倍",
+    "stat_conv_desc": "转换率是电子邮件的 3 倍",
+    "stat_speed": "60秒",
+    "stat_speed_desc": "平均响应时间"
+  },
+  "referral": {
+    "title": "Kommai 合作伙伴计划",
+    "subtitle": "赚取 20% 终身现金提成",
+    "desc": "邀请其他商家使用 Kommai。每当他们为 Pro 计划付费，您就能每个月获得 20% 的现金提成。上不封顶，长期有效。",
+    "cta": "获取您的专属邀请链接"
+  },
+  "testimonials": {
+    "title": "本地商家对 Kommai 的评价",
+    "1": {
+      "quote": "Kommai 就像是一位 24/7 全天候免费工作的全职前台。以前我们晚上要花几个小时回复预约，现在完全实现了自动化。",
+      "author": "Sarah Lim",
+      "role": "水疗中心老板"
+    },
+    "2": {
+      "quote": "自从用 Kommai 收取订金后，我们的客户爽约率降到了绝对零点。这为我们挽回了因顾客爽约而损失的数千令吉时间成本。",
+      "author": "Ahmad Ridzuan",
+      "role": "汽车维修厂老板"
+    },
+    "3": {
+      "quote": "语言翻译非常精准。我们的华裔客户用中文正常交流，系统也能毫无障碍地准确登记预约。",
+      "author": "Michelle Chen",
+      "role": "美发沙龙经理"
+    }
+  },
+  "faq": {
+    "title": "常见问题解答",
+    "q1": "前25名客户真的免费吗？",
+    "a1": "是的！完全免费。我们不会限制您已有的老客户，您可以永久免费管理多达25位独立客户资料，无需支付任何费用。",
+    "q2": "订金付款是如何处理的？",
+    "a2": "Kommai 直接与 Billplz 等安全支付网关集成。资金直接支付到您自己的银行账户中，我们从不触碰或保管您的资金。",
+    "q3": "我需要安装任何应用或具备编程技能吗？",
+    "a3": "完全不需要编程技能！您只需使用我们简单的网页控制台，即可在 10 分钟内连接您的号码并设置您的业务日程。"
+  },
+  "dashboard": {
+    "welcome": "欢迎回来，{{name}}",
+    "stat_customers": "独立客户数",
+    "stat_today": "今日预约数",
+    "stat_upcoming": "即将到来预约",
+    "stat_deposits": "已收订金总额",
+    "unlimited": "无限制",
+    "recent_bookings": "近期预约安排",
+    "view_all": "查看全部"
+  },
+  "mockup": {
+    "welcome": "您好！欢迎光临。今天有什么我可以帮您的？",
+    "customer_msg": "你好！请问明天下午 3 点还有空档做 2 小时的项目吗？"
+  },
+  "templates_page": {
+    "title": "免费 WhatsApp 预约模板",
+    "subtitle": "一键复制，立即粘贴并开启自动化流程。",
+    "copy_btn": "复制模板"
+  }
+}

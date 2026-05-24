@@ -1,0 +1,156 @@
+{
+  "common": {
+    "try_free": "Mula Setup Percuma — 10 Minit",
+    "ready_to_start": "Sedia untuk automasi? Klik di sini untuk setup percuma.",
+    "login": "Log Masuk",
+    "logout": "Log Keluar",
+    "dashboard": "Papan Pemuka",
+    "settings": "Tetapan",
+    "bookings": "Tempahan",
+    "customers": "Pelanggan",
+    "upgrade": "Naik Taraf Pelan",
+    "save_changes": "Simpan Perubahan"
+  },
+  "hero": {
+    "tagline": "Percuma Selamanya untuk Sehingga 25 Pelanggan",
+    "headline": "Resepsionis WhatsApp Percuma Anda",
+    "subheadline": "Automasikan tempahan, kutip deposit selamat, dan hantar peringatan tanpa usaha terus melalui WhatsApp. Biarkan Kommai melayan pelanggan anda 24/7 secara autopilot."
+  },
+  "social_proof": {
+    "title": "DIPERCAYAI OLEH 2,400+ PEMILIK PERNIAGAAN TEMPATAN",
+    "live_bookings": "Tempahan langsung selesai {{time}} lalu untuk {{service}}",
+    "metric_bookings": "2.1M+ Tempahan Diautomasikan",
+    "metric_noshow": "99.4% Pengurangan No-Show"
+  },
+  "dashboard_preview": {
+    "title": "Papan Pemuka Automasi Masa Nyata",
+    "subtitle": "Lihat perniagaan anda berjalan secara autopilot. Pantau tempahan, deposit, dan statistik sembang dikemas kini secara langsung.",
+    "autopilot": "Auto-pilot aktif",
+    "bookings_today": "Tempahan Hari Ini",
+    "deposits_collected": "Deposit Dikutip",
+    "messages_handled": "Sembang Automatik",
+    "conversion_rate": "Kadar Tempahan"
+  },
+  "how_it_works": {
+    "title": "3 Langkah Mudah Ke Arah Automasi",
+    "step1_title": "1. Sambung Nombor Anda",
+    "step1_desc": "Hubungkan nombor WhatsApp Business rasmi anda dengan selamat dalam masa kurang dari 10 minit.",
+    "step2_title": "2. Masukkan Perkhidmatan",
+    "step2_desc": "Tetapkan waktu operasi, senarai perkhidmatan, harga, dan peraturan deposit anda.",
+    "step3_title": "3. Pantau Tempahan Masuk",
+    "step3_desc": "AI kami melayan pelanggan 24/7, menguruskan slot jadual, mengelakkan pertindihan, dan mengamankan bayaran."
+  },
+  "features_section": {
+    "title": "Semua yang Anda Perlukan untuk Autopilot",
+    "subtitle": "Hentikan kebimbangan tentang mesej terlepas dan no-show. Biarkan sistem kami melakukan kerja berat untuk anda.",
+    "ai": {
+      "title": "Balasan Automatik Pintar",
+      "desc": "Membalas mesej serta-merta dalam Bahasa Inggeris, Melayu, atau Cina. Menempah slot dan berkoordinasi seperti resepsionis sebenar."
+    },
+    "payments": {
+      "title": "Kutipan Deposit Serta-merta",
+      "desc": "Menghantar pautan pembayaran secara automatik. Tempahan hanya disahkan selepas deposit dibayar untuk melindungi masa anda."
+    },
+    "reminders": {
+      "title": "Peringatan Automatik",
+      "desc": "Menghantar peringatan mesra 24 jam sebelum temu janji supaya pelanggan anda tidak pernah lupa untuk hadir."
+    },
+    "sync": {
+      "title": "Automasi Google Sheets Sync",
+      "desc": "Menyegerakan setiap tempahan baru ke Google Sheets. Anda dan pasukan anda sentiasa melihat jadual terkini."
+    },
+    "human": {
+      "title": "Handoff Manusia Pintar",
+      "desc": "Memberi amaran serta-merta pada telefon anda apabila pelanggan bertanya soalan kompleks, supaya anda boleh mengambil alih."
+    },
+    "analytics": {
+      "title": "Pemantauan Masa Nyata",
+      "desc": "Pantau jualan, tempahan, dan butiran pelanggan anda serta-merta dari papan pemuka anda yang ringkas."
+    }
+  },
+  "pricing": {
+    "title": "Harga yang Mudah & Telus",
+    "recommended": "Paling Popular",
+    "free_name": "Starter",
+    "free_price": "RM0",
+    "free_features": [
+      "Sehingga 25 pelanggan unik",
+      "Sembang automatik tanpa had",
+      "Kutipan deposit serta-merta",
+      "Penyegerakan Google Sheets secara nyata",
+      "Setup automatik dalam 10 minit"
+    ],
+    "pro_name": "Growth Pro",
+    "pro_price": "RM79",
+    "pro_period": "/bulan",
+    "pro_features": [
+      "Pelanggan unik tanpa had",
+      "Tempahan automatik tanpa had",
+      "Personaliti chatbot AI tersuai",
+      "Amaran handoff manusia keutamaan",
+      "Papan pemuka multi-agen khas",
+      "Sokongan teknikal VIP 24/7"
+    ]
+  },
+  "why_whatsapp": {
+    "title": "Kenapa WhatsApp Adalah Saluran Jualan Terbaik Anda",
+    "stat_rate": "98%",
+    "stat_rate_desc": "Kadar Mesej Dibuka",
+    "stat_conv": "3x",
+    "stat_conv_desc": "Penukaran lebih tinggi dari e-mel",
+    "stat_speed": "60s",
+    "stat_speed_desc": "Purata masa respons"
+  },
+  "referral": {
+    "title": "Program Rakan Kongsi Kommai",
+    "subtitle": "Dapatkan Komisen Sepanjang Hayat 20%",
+    "desc": "Jemput pemilik perniagaan lain ke Kommai. Setiap kali mereka membayar untuk Pro, anda mendapat komisen tunai 20%, setiap bulan. Tiada had, tiada sekatan.",
+    "cta": "Dapatkan Pautan Rakan Kongsi"
+  },
+  "testimonials": {
+    "title": "Apa Kata Pemilik Perniagaan Mengenai Kommai",
+    "1": {
+      "quote": "Kommai seperti mempunyai resepsionis sepenuh masa yang bekerja 24/7 secara percuma. Kami biasa menghabiskan masa berjam-jam membalas tempahan pada waktu malam, kini semuanya diautomasikan.",
+      "author": "Sarah Lim",
+      "role": "Pemilik Spa"
+    },
+    "2": {
+      "quote": "Sejak mengumpul deposit dengan Kommai, kes no-show kami telah berkurang kepada sifar mutlak. Ia menyelamatkan ribuan ringgit kami daripada masa yang terbuang.",
+      "author": "Ahmad Ridzuan",
+      "role": "Pemilik Bengkel Automotif"
+    },
+    "3": {
+      "quote": "Terjemahan sangat tepat. Pelanggan kami yang berbahasa Cina berbual seperti biasa, dan sistem menempah untuk mereka dengan betul tanpa sebarang masalah.",
+      "author": "Michelle Chen",
+      "role": "Pengurus Salun Rambut"
+    }
+  },
+  "faq": {
+    "title": "Soalan Lazim",
+    "q1": "Adakah ia benar-benar percuma untuk 25 pelanggan?",
+    "a1": "Ya! Benar-benar percuma. Kami tidak menyekat pelanggan sedia ada anda, dan anda boleh mengurus sehingga 25 profil pelanggan unik selamanya tanpa membayar satu sen pun.",
+    "q2": "Bagaimanakah pembayaran deposit diproses?",
+    "a2": "Kommai bersepadu dengan gerbang pembayaran selamat seperti Billplz. Wang dibayar terus ke dalam akaun bank anda sendiri. Kami tidak pernah menyentuh atau memegang wang anda.",
+    "q3": "Adakah saya perlu memasang sebarang aplikasi atau mempunyai kemahiran pengekodan?",
+    "a3": "Tiada kemahiran pengekodan diperlukan! Anda boleh menyambungkan nombor anda dan menyediakan jadual perniagaan anda dalam masa kurang dari 10 minit menggunakan papan pemuka web kami yang mudah."
+  },
+  "dashboard": {
+    "welcome": "Selamat kembali, {{name}}",
+    "stat_customers": "Pelanggan Unik",
+    "stat_today": "Tempahan Hari Ini",
+    "stat_upcoming": "Tempahan Akan Datang",
+    "stat_deposits": "Deposit Dikutip",
+    "unlimited": "Tanpa Had",
+    "recent_bookings": "Temu Janji Terkini",
+    "view_all": "Lihat Semua"
+  },
+  "mockup": {
+    "welcome": "Hai di sana! Selamat datang. Bagaimana saya boleh membantu anda hari ini?",
+    "customer_msg": "Hai! Adakah anda mempunyai slot untuk sesi 2 jam esok pada jam 3 petang?"
+  },
+  "templates_page": {
+    "title": "Templat Tempahan WhatsApp Percuma",
+    "subtitle": "Salin, tampal, dan mulakan automasi hari ini.",
+    "copy_btn": "Salin Templat"
+  }
+}
