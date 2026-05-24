@@ -12,7 +12,7 @@ export default function DemoPage() {
     { type: 'bot', text: 'Hello! 👋 I can help you with that. Our Traditional Massage is RM 120 for 60 minutes. Shall I confirm your booking for tomorrow at 2:00 PM?', delay: 2500 },
     { type: 'user', text: 'Yes please!', delay: 4500 },
     { type: 'bot', text: 'Great! To secure your slot, we require a deposit of RM 30.', delay: 6000 },
-    { type: 'bot', text: 'Please pay securely here: https://whatsupcrm.nextblaze.asia/pay/1234', delay: 7000 },
+    { type: 'bot', text: 'Please pay securely here: https://kommai.nextblaze.asia/pay/1234', delay: 7000 },
     { type: 'user', text: 'Paid!', delay: 10000 },
     { type: 'bot', text: 'Payment received ✅ Your booking for Traditional Massage tomorrow at 2:00 PM is confirmed. See you then!', delay: 11500 },
   ];

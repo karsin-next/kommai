@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     const gate = await FreemiumService.checkAndIncrement(business.id, from);
     if (!gate.allowed) {
       await WhatsAppService.sendTextMessage(from, "Maaf, kami tidak dapat menerima tempahan baru buat masa ini. Sila hubungi kami kemudian.");
-      await WhatsAppService.sendTextMessage(business.owner_phone, `⚠️ Limit free 25 customer sudah dicapai! Upgrade sekarang di whatsupcrm.nextblaze.asia/upgrade untuk terima tempahan ${from}.`);
+      await WhatsAppService.sendTextMessage(business.owner_phone, `⚠️ Limit free 25 customer sudah dicapai! Upgrade sekarang di kommai.nextblaze.asia/upgrade untuk terima tempahan ${from}.`);
       return NextResponse.json({ success: true });
     }
 

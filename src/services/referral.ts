@@ -164,7 +164,7 @@ export class ReferralService {
 
     return {
       code,
-      link: `https://whatsupcrm.nextblaze.asia/onboard?ref=${code}`,
+      link: `https://kommai.nextblaze.asia/onboard?ref=${code}`,
       pending_count: pendingRes.count || 0,
       completed_count: completedRes.count || 0,
       total_earned_rm: balanceRes.data?.total_earned || 0,

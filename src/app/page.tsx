@@ -16,7 +16,7 @@ import Footer from '@/components/landing/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#0a0f0f] text-slate-100 selection:bg-primary-500/30 selection:text-white font-sans scroll-smooth overflow-x-hidden">
+    <div className="min-h-screen bg-white text-[#0f1a24] selection:bg-[#ffd800]/30 selection:text-[#022f42] font-sans scroll-smooth overflow-x-hidden">
       
       {/* 1. Header Navigation */}
       <Navbar />

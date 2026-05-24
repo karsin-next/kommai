@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WhatsUpCRM | Your Free WhatsApp Receptionist",
+  title: "Kommai | Your Free WhatsApp Receptionist by Nextblaze",
   description: "Automate bookings, collect deposits, and send reminders—all inside WhatsApp.",
 };
 

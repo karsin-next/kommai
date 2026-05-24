@@ -192,7 +192,7 @@ export default function SettingsPage() {
                   <ol className="list-decimal pl-5 space-y-1">
                     <li>Create a new Google Sheet.</li>
                     <li>Click <b>Share</b> in the top right.</li>
-                    <li>Share it with: <code className="bg-slate-800 px-1 py-0.5 rounded text-blue-400">automation@whatsupcrm.iam.gserviceaccount.com</code> as <b>Editor</b>.</li>
+                    <li>Share it with: <code className="bg-slate-800 px-1 py-0.5 rounded text-blue-400">automation@kommai.iam.gserviceaccount.com</code> as <b>Editor</b>.</li>
                     <li>Copy the Sheet ID from the URL (the long string between <code className="bg-slate-800 px-1 py-0.5 rounded">/d/</code> and <code className="bg-slate-800 px-1 py-0.5 rounded">/edit</code>) and paste it below.</li>
                   </ol>
                 </div>

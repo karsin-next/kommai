@@ -29,7 +29,7 @@ export class PaymentService {
         `${BASE_URL}/bills`,
         {
           collection_id: COLLECTION_ID,
-          email: customerEmail || 'no-email@whatsupcrm.nextblaze.asia',
+          email: customerEmail || 'no-email@kommai.nextblaze.asia',
           mobile: customerPhone,
           name: customerName || 'Valued Customer',
           amount: Math.round(amount * 100), // cents

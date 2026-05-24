@@ -2,22 +2,25 @@
 
 import React, { useState } from 'react';
 import { useTranslation } from '@/context/LanguageContext';
-import { ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FAQAccordion() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 md:py-32 select-none">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="py-24 md:py-32 relative bg-[#e6f2fa] border-y border-[#022f42]/10 select-none">
+      
+      {/* Floating background orb */}
+      <div className="absolute top-10 right-10 w-24 h-24 rounded-full bg-[#0077cc]/5 blur-xl pointer-events-none -z-10 animate-pulse" />
+
+      <div className="max-w-3xl mx-auto px-6 font-sans">
         
         {/* Header Block */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-[#022f42] uppercase tracking-tighter">
             {t('faq.title')}
           </h2>
-          <div className="w-12 h-1 bg-primary-500 mx-auto mt-4 rounded-full" />
+          <div className="border-b-4 border-[#ffd800] w-24 mx-auto mt-4" />
         </div>
 
         {/* FAQ Grid */}
@@ -36,18 +39,25 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="glass-card border border-slate-900 overflow-hidden select-none">
+    <div className={`bg-white border-2 transition-all duration-300 overflow-hidden select-none rounded-2xl shadow-sm ${
+      isOpen ? 'border-[#ffd800]' : 'border-[#022f42]/10 hover:border-[#ffd800]/50'
+    }`}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-6 text-left focus:outline-none select-none transition-colors hover:bg-slate-900/10"
+        className={`w-full flex items-center justify-between p-6 text-left focus:outline-none select-none transition-colors duration-300 ${
+          isOpen ? 'bg-[#e6f2fa]' : 'hover:bg-[#e6f2fa]/30'
+        }`}
       >
-        <span className="font-bold text-white text-sm sm:text-base tracking-wide select-none">
+        <span className="font-black text-[#022f42] text-sm sm:text-base tracking-tight select-none">
           {question}
         </span>
-        <ChevronDown 
-          size={18} 
-          className={`text-slate-400 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary-400' : ''}`} 
-        />
+        
+        {/* Custom Circular +/- colorful indicators */}
+        <div className={`w-6 h-6 rounded-full flex items-center justify-center font-black text-sm shrink-0 select-none transition-all duration-300 ${
+          isOpen ? 'bg-[#ffd800] text-[#022f42] rotate-180' : 'bg-[#0077cc] text-white'
+        }`}>
+          {isOpen ? '−' : '+'}
+        </div>
       </button>
       
       <AnimatePresence initial={false}>
@@ -58,7 +68,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
           >
-            <div className="p-6 pt-0 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-900 font-semibold select-none">
+            <div className="p-6 pt-4 text-xs sm:text-sm text-[#1e4a62] leading-relaxed border-t border-[#022f42]/10 font-bold select-none bg-white">
               {answer}
             </div>
           </motion.div>

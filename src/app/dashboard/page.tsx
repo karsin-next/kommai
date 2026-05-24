@@ -108,7 +108,7 @@ export default function DashboardPage() {
               <div>
                 <h2 className="text-xl font-bold text-white mb-2">Refer & Earn 🎁</h2>
                 <p className="text-white/80 text-sm leading-relaxed max-w-sm">
-                  Share WhatsUpCRM with other business owners and get 1 month of Pro free for every successful signup!
+                  Share Kommai with other business owners and get 1 month of Pro free for every successful signup!
                 </p>
               </div>
               <Link href={`/dashboard/referral?id=${businessId}`} className="shrink-0 w-full md:w-auto text-center px-6 py-3 rounded-xl bg-white text-primary-900 font-bold text-sm shadow-xl hover:scale-105 transition-all">

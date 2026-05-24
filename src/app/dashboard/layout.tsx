@@ -55,7 +55,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       {/* Sidebar - Desktop */}
       <aside className="hidden md:flex w-72 border-r border-slate-800/50 flex-col p-8 fixed h-full bg-slate-900/30 backdrop-blur-md z-20">
         <div className="text-2xl font-bold mb-12 text-white tracking-tight">
-          WhatsUpCRM
+          Kommai
         </div>
         
         <nav className="space-y-2 flex-1">
@@ -88,7 +88,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
       {/* Mobile Header */}
       <header className="md:hidden flex items-center justify-between p-6 bg-slate-900/80 backdrop-blur-md border-b border-slate-800/50 sticky top-0 z-30">
-        <div className="text-xl font-bold text-white">WhatsUpCRM</div>
+        <div className="text-xl font-bold text-white">Kommai</div>
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-2xl text-slate-300">
           {isMobileMenuOpen ? '✕' : '☰'}
         </button>

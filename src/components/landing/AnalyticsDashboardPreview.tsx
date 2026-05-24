@@ -74,30 +74,30 @@ export default function AnalyticsDashboardPreview() {
   }, []);
 
   return (
-    <div className="w-full glass-card border border-slate-800/80 p-6 md:p-8 relative overflow-hidden rounded-[32px]">
-      {/* Glow Effects */}
-      <div className="absolute -top-40 -left-40 w-96 h-96 bg-primary-500/10 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-teal-500/5 blur-[120px] rounded-full pointer-events-none" />
+    <div className="w-full bg-white border-2 border-[#022f42]/10 p-6 md:p-8 relative overflow-hidden rounded-[32px] shadow-md select-none">
+      {/* Soft Glow Effects */}
+      <div className="absolute -top-40 -left-40 w-96 h-96 bg-[#ffd800]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-[#0077cc]/5 blur-[120px] rounded-full pointer-events-none" />
 
       {/* Top Header Row */}
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 pb-6 border-b border-slate-800/60">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 pb-6 border-b border-[#022f42]/10">
         <div>
-          <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+          <h3 className="text-xl font-black text-[#022f42] uppercase tracking-tighter flex items-center gap-2">
             <span>{t('dashboard_preview.title')}</span>
-            <span className="text-[10px] tracking-wider uppercase bg-primary-500/10 text-primary-400 px-2 py-0.5 rounded-full border border-primary-500/20 font-extrabold font-mono">
+            <span className="text-[10px] tracking-wider uppercase bg-[#0077cc]/10 text-[#0077cc] px-2 py-0.5 rounded-full border border-[#0077cc]/20 font-black">
               Live Mockup
             </span>
           </h3>
-          <p className="text-xs text-slate-400 mt-1">{t('dashboard_preview.subtitle')}</p>
+          <p className="text-xs text-[#1e4a62] font-semibold mt-1">{t('dashboard_preview.subtitle')}</p>
         </div>
         
         {/* Pulsing Auto-pilot status */}
-        <div className="flex items-center gap-2 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-full shadow-inner select-none shrink-0">
+        <div className="flex items-center gap-2 bg-[#e6f2fa] border border-[#022f42]/10 px-4 py-2 rounded-full shadow-sm select-none shrink-0">
           <span className="relative flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
           </span>
-          <span className="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400">
+          <span className="text-[10px] font-black uppercase tracking-widest text-[#10B981]">
             {t('dashboard_preview.autopilot')}
           </span>
         </div>
@@ -106,26 +106,26 @@ export default function AnalyticsDashboardPreview() {
       {/* 4 Stats Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <StatCard 
-          icon={<Calendar size={16} className="text-primary-400" />}
+          icon={<Calendar size={16} className="text-[#0077cc]" />}
           label={t('dashboard_preview.bookings_today')}
           value={`${bookingsCount} / 25`}
           subtext="Free Limit Cap"
           progress={(bookingsCount / 25) * 100}
         />
         <StatCard 
-          icon={<CreditCard size={16} className="text-primary-400" />}
+          icon={<CreditCard size={16} className="text-[#10B981]" />}
           label={t('dashboard_preview.deposits_collected')}
           value={`RM ${depositsCount}.00`}
           subtext="Direct to your Bank"
         />
         <StatCard 
-          icon={<MessageSquare size={16} className="text-primary-400" />}
+          icon={<MessageSquare size={16} className="text-[#0077cc]" />}
           label={t('dashboard_preview.messages_handled')}
           value={chatsCount.toString()}
           subtext="100% Autopilot chats"
         />
         <StatCard 
-          icon={<TrendingUp size={16} className="text-primary-400" />}
+          icon={<TrendingUp size={16} className="text-[#ffd800]" />}
           label={t('dashboard_preview.conversion_rate')}
           value="94.2%"
           subtext="Chat-to-booking rate"
@@ -136,10 +136,10 @@ export default function AnalyticsDashboardPreview() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
         
         {/* SVG Sparkline / Bookings Trend */}
-        <div className="lg:col-span-7 bg-[#0d1212]/40 rounded-2xl p-5 border border-slate-800/80 flex flex-col justify-between h-[240px]">
+        <div className="lg:col-span-7 bg-white rounded-2xl p-5 border-2 border-[#022f42]/10 flex flex-col justify-between h-[240px] shadow-sm">
           <div className="flex justify-between items-center mb-4">
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Bookings Volume Trend</div>
-            <span className="text-[10px] font-bold text-primary-400">+14% vs last week</span>
+            <div className="text-[10px] font-black text-[#022f42] uppercase tracking-wider">Bookings Volume Trend</div>
+            <span className="text-[10px] font-black text-[#10B981]">+14% vs last week</span>
           </div>
           
           <div className="flex-1 w-full relative min-h-[110px]">
@@ -147,8 +147,8 @@ export default function AnalyticsDashboardPreview() {
             <svg className="w-full h-full" viewBox="0 0 300 100" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#0d9488" stopOpacity="0.4" />
-                  <stop offset="100%" stopColor="#0d9488" stopOpacity="0.0" />
+                  <stop offset="0%" stopColor="#0077cc" stopOpacity="0.15" />
+                  <stop offset="100%" stopColor="#0077cc" stopOpacity="0.0" />
                 </linearGradient>
               </defs>
               {/* Path line */}
@@ -158,7 +158,7 @@ export default function AnalyticsDashboardPreview() {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 d="M 0,90 Q 50,40 100,60 T 200,20 T 300,10" 
                 fill="none" 
-                stroke="#0d9488" 
+                stroke="#0077cc" 
                 strokeWidth="3"
                 strokeLinecap="round"
               />
@@ -170,7 +170,7 @@ export default function AnalyticsDashboardPreview() {
             </svg>
           </div>
 
-          <div className="flex justify-between text-[9px] text-slate-500 font-bold tracking-wider pt-2 border-t border-slate-800/40">
+          <div className="flex justify-between text-[9px] text-[#1e4a62] font-black tracking-wider pt-2 border-t border-[#022f42]/10">
             <span>MON</span>
             <span>TUE</span>
             <span>WED</span>
@@ -182,36 +182,36 @@ export default function AnalyticsDashboardPreview() {
         </div>
 
         {/* Live Booking Activities Feed */}
-        <div className="lg:col-span-5 bg-[#0d1212]/40 rounded-2xl p-5 border border-slate-800/80 flex flex-col justify-between min-h-[240px]">
+        <div className="lg:col-span-5 bg-white rounded-2xl p-5 border-2 border-[#022f42]/10 flex flex-col justify-between min-h-[240px] shadow-sm">
           <div className="flex justify-between items-center mb-4">
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Live Booking Stream</div>
-            <div className="flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-ping" />
-              <span className="text-[9px] font-bold text-primary-400 uppercase tracking-widest">Real-time</span>
+            <div className="text-[10px] font-black text-[#022f42] uppercase tracking-wider">Live Booking Stream</div>
+            <div className="flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-ping" />
+              <span className="text-[9px] font-black text-[#10B981] uppercase tracking-widest">Real-time</span>
             </div>
           </div>
 
           <div className="space-y-3 flex-1 overflow-hidden">
             {logs.map((log) => (
-              <div key={log.id} className="flex justify-between items-center p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60 text-xs hover:border-slate-800 transition-all">
+              <div key={log.id} className="flex justify-between items-center p-2.5 rounded-xl bg-[#e6f2fa]/40 border border-[#022f42]/5 text-xs hover:border-[#ffd800]/50 transition-all duration-300">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 border border-slate-700/40">
+                  <div className="w-7 h-7 rounded-lg bg-white flex items-center justify-center text-[#1e4a62] border border-[#022f42]/10 shadow-sm">
                     <Bot size={13} />
                   </div>
                   <div>
-                    <div className="font-bold text-slate-200">{log.customer}</div>
-                    <div className="text-[10px] text-slate-400">{log.service}</div>
+                    <div className="font-black text-[#022f42] tracking-tight">{log.customer}</div>
+                    <div className="text-[10px] text-[#1e4a62] font-bold">{log.service}</div>
                   </div>
                 </div>
                 <div className="text-right">
-                  <span className={`inline-block px-2 py-0.5 rounded text-[8px] font-extrabold uppercase tracking-wide border ${
+                  <span className={`inline-block px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-wide border ${
                     log.status === 'paid' 
-                      ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
-                      : 'bg-primary-500/10 text-primary-400 border-primary-500/20'
+                      ? 'bg-[#10B981]/10 text-[#10B981] border-[#10B981]/20' 
+                      : 'bg-[#0077cc]/10 text-[#0077cc] border-[#0077cc]/20'
                   }`}>
                     {log.status}
                   </span>
-                  <div className="text-[9px] text-slate-500 font-bold mt-1">{log.time}</div>
+                  <div className="text-[9px] text-[#1e4a62]/60 font-bold mt-1">{log.time}</div>
                 </div>
               </div>
             ))}
@@ -225,29 +225,29 @@ export default function AnalyticsDashboardPreview() {
 
 function StatCard({ icon, label, value, subtext, progress }: { icon: React.ReactNode; label: string; value: string; subtext: string; progress?: number }) {
   return (
-    <div className="bg-[#0d1212]/50 border border-slate-800 p-4 rounded-2xl flex flex-col justify-between hover:border-primary-500/20 transition-all select-none">
-      <div className="flex justify-between items-start mb-2">
-        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{label}</span>
-        <div className="w-6 h-6 rounded-lg bg-slate-900 border border-slate-800/80 flex items-center justify-center shrink-0">
+    <div className="bg-[#e6f2fa]/55 border-2 border-[#022f42]/5 p-4 rounded-2xl flex flex-col justify-between hover:border-[#ffd800]/40 transition-all select-none">
+      <div className="flex justify-between items-start mb-2 gap-1.5">
+        <span className="text-[9px] font-black text-[#1e4a62] uppercase tracking-wider">{label}</span>
+        <div className="w-6 h-6 rounded-lg bg-white border border-[#022f42]/10 flex items-center justify-center shrink-0 shadow-sm">
           {icon}
         </div>
       </div>
       
       <div>
-        <div className="text-lg md:text-xl font-black text-white tracking-tight leading-none mb-1">{value}</div>
+        <div className="text-lg md:text-xl font-black text-[#022f42] tracking-tighter leading-none mb-1">{value}</div>
         
         {progress !== undefined ? (
           <div className="mt-2">
-            <div className="w-full bg-slate-950 rounded-full h-1.5 overflow-hidden">
+            <div className="w-full bg-[#022f42]/10 rounded-full h-1.5 overflow-hidden">
               <div 
-                className="bg-primary-500 h-1.5 rounded-full transition-all duration-500" 
+                className="bg-[#0077cc] h-1.5 rounded-full transition-all duration-500" 
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <div className="text-[9px] text-slate-500 font-semibold mt-1">{subtext}</div>
+            <div className="text-[9px] text-[#1e4a62]/60 font-bold mt-1">{subtext}</div>
           </div>
         ) : (
-          <span className="text-[9px] text-slate-500 font-semibold">{subtext}</span>
+          <span className="text-[9px] text-[#1e4a62]/60 font-bold">{subtext}</span>
         )}
       </div>
     </div>

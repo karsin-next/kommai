@@ -22,7 +22,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>('en');
 
   useEffect(() => {
-    const saved = localStorage.getItem('whatsupcrm_lang') as Language;
+    const saved = localStorage.getItem('kommai_lang') as Language;
     if (saved && (saved === 'en' || saved === 'ms' || saved === 'zh')) {
       setLanguageState(saved);
     }
@@ -30,7 +30,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('whatsupcrm_lang', lang);
+    localStorage.setItem('kommai_lang', lang);
   };
 
   const t = (key: string, params?: Record<string, string>): any => {

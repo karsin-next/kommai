@@ -60,13 +60,13 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-6 selection:bg-primary-500/30 selection:text-white">
       <Link href="/" className="text-2xl font-bold text-white mb-12 tracking-tight">
-        WhatsUpCRM
+        Kommai
       </Link>
       
       <div className="glass-card w-full max-w-md p-8 md:p-10 space-y-8">
         <div className="text-center">
           <h1 className="text-2xl font-extrabold text-white mb-2 tracking-tight">Welcome Back</h1>
-          <p className="text-slate-400 text-sm">Sign in to manage your wellness center.</p>
+          <p className="text-slate-400 text-sm">Sign in to manage your Kommai account.</p>
         </div>
 
         {/* Google OAuth */}
