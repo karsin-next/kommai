@@ -77,12 +77,55 @@ export default function SettingsPage() {
             Automation & AI
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <InputField 
-              label="Deposit Amount (RM)" 
-              type="number"
-              value={business.config.deposit_amount_rm.toString()} 
-              onChange={(v: string) => setBusiness({...business, config: {...business.config, deposit_amount_rm: parseInt(v)}})} 
-            />
+            <div className="space-y-2">
+              <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest px-1">Deposit Collection</label>
+              <div className="flex items-center gap-3 p-4 bg-slate-900/50 border border-slate-700 rounded-2xl">
+                <input 
+                  type="checkbox" 
+                  checked={business.config.deposit_required} 
+                  onChange={(e) => {
+                    const checked = e.target.checked;
+                    setBusiness({
+                      ...business, 
+                      config: {
+                        ...business.config, 
+                        deposit_required: checked,
+                        deposit_amount_rm: checked ? (business.config.deposit_amount_rm || 30) : 0
+                      }
+                    });
+                  }}
+                  className="w-5 h-5 rounded border-slate-700 bg-slate-800 text-primary-500 focus:ring-primary-500 focus:ring-offset-slate-900"
+                />
+                <span className="text-sm font-bold text-white">Require Booking Deposit</span>
+              </div>
+            </div>
+
+            {business.config.deposit_required ? (
+              <InputField 
+                label="Deposit Amount (RM)" 
+                type="number"
+                value={business.config.deposit_amount_rm.toString()} 
+                onChange={(v: string) => {
+                  const val = parseInt(v) || 0;
+                  setBusiness({
+                    ...business, 
+                    config: {
+                      ...business.config, 
+                      deposit_amount_rm: val,
+                      deposit_required: val > 0
+                    }
+                  });
+                }} 
+              />
+            ) : (
+              <div className="space-y-2">
+                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest px-1">Deposit Amount</label>
+                <div className="w-full bg-slate-900/30 border border-slate-800 rounded-2xl px-5 py-4 text-sm font-bold text-slate-500">
+                  RM 0.00 (Instant Confirmations)
+                </div>
+              </div>
+            )}
+
             <div className="space-y-2">
               <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest px-1">AI Logic Language</label>
               <select 
@@ -163,6 +206,36 @@ export default function SettingsPage() {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Referral Program Toggle */}
+        <section className="glass-card p-8 md:p-10 shadow-sm">
+          <h2 className="text-xl font-bold text-white mb-2 tracking-tight">
+            Referral Program
+          </h2>
+          <p className="text-slate-400 text-sm mb-6 border-b border-slate-700/50 pb-4">
+            Reward other merchants for signing up to Kommai.
+          </p>
+          <div className="flex items-center gap-3 p-4 bg-slate-900/50 border border-slate-700 rounded-2xl">
+            <input 
+              type="checkbox" 
+              checked={business.config.referral_enabled !== false} 
+              onChange={(e) => {
+                setBusiness({
+                  ...business, 
+                  config: {
+                    ...business.config, 
+                    referral_enabled: e.target.checked
+                  }
+                });
+              }}
+              className="w-5 h-5 rounded border-slate-700 bg-slate-800 text-primary-500 focus:ring-primary-500 focus:ring-offset-slate-900"
+            />
+            <div>
+              <span className="text-sm font-bold text-white block">Enable Referral Program Tab</span>
+              <span className="text-xs text-slate-500 block mt-0.5">Let owners share codes to earn free Pro months (RM79 value).</span>
             </div>
           </div>
         </section>

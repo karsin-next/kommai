@@ -9,6 +9,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [loadingAuth, setLoadingAuth] = useState(true);
   const [businessId, setBusinessId] = useState<string | null>(null);
+  const [referralEnabled, setReferralEnabled] = useState(true);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -23,12 +24,17 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       // Find the business owned by this user
       const { data: business } = await supabase
         .from('businesses')
-        .select('id')
+        .select('id, config')
         .eq('owner_id', session.user.id)
         .single();
 
       if (business) {
         setBusinessId(business.id);
+        if (business.config && business.config.referral_enabled === false) {
+          setReferralEnabled(false);
+        } else {
+          setReferralEnabled(true);
+        }
       } else {
         // Not onboarded yet
         router.push('/onboard');
@@ -46,7 +52,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     { name: 'Overview', href: `/dashboard?id=${businessId}`, icon: '📊' },
     { name: 'Bookings', href: `/dashboard/bookings?id=${businessId}`, icon: '📅' },
     { name: 'Customers', href: `/dashboard/customers?id=${businessId}`, icon: '👥' },
-    { name: 'Refer & Earn', href: `/dashboard/referral?id=${businessId}`, icon: '🎁' },
+    ...(referralEnabled ? [{ name: 'Refer & Earn', href: `/dashboard/referral?id=${businessId}`, icon: '🎁' }] : []),
     { name: 'Settings', href: `/dashboard/settings?id=${businessId}`, icon: '⚙️' },
   ];
 
