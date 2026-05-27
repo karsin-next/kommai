@@ -6,6 +6,7 @@ export interface BusinessConfig {
   auto_confirm: boolean;
   reminder_hours_before: number;
   language: 'bm' | 'en';
+  referral_enabled?: boolean;
 }
 
 export interface Service {
