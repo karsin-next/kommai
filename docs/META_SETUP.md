@@ -67,9 +67,21 @@ To route customer messages from Meta's servers to your Vercel Next.js backend, y
 
 ## Step 5: Test the Booking Automation
 
-1. Use your personal WhatsApp number (the recipient number you registered in Step 3).
-2. Send a direct WhatsApp message to the **Sandbox Phone Number** (the sending number shown on your Meta API Setup page).
-3. Try sending intents:
-   * *"Hi, I want to book a massage session tomorrow at 3pm"*
-   * *"Slot urut pukul 2pm hari Sabtu ni kosong tak?"*
-4. The Kommai automated chatbot will parse the intent via Claude Haiku, verify slot availability in Supabase, and respond directly to your WhatsApp with confirmation and deposit instructions!
+Because Meta's Developer Sandbox Phone Numbers are virtual sandbox numbers, they are outbound-only by default and **will show as "Not on WhatsApp" if you try to search or initiate a message to them first** from your personal phone. 
+
+To bypass this restriction and open the chat thread instantly:
+
+1. **Trigger Outbound Template from Meta Console**:
+   * Go back to the **API Setup** page in your Meta Developer App.
+   * Under **"Step 1: Send messages with the API"**, make sure your personal phone number is selected in the **"To"** dropdown list.
+   * Click the blue **"Send message"** button.
+2. **Open the Thread on Your Phone**:
+   * Meta will immediately send a pre-approved `"hello_world"` template message to your personal WhatsApp.
+   * Open WhatsApp on your phone. You will see a new chat thread from the Sandbox number (showing the template: *"Welcome and thank you for choosing WhatsApp..."*).
+3. **Engage with Your Chatbot**:
+   * Reply directly to that new chat thread! This registers your active 24-hour customer service window.
+   * Try sending a booking request in English, Malay, or Chinese:
+     * *"Hi, I want to book a massage session tomorrow at 3pm"*
+     * *"Slot urut pukul 2pm hari Sabtu ni kosong tak?"*
+   * Your Next.js backend webhook (`/api/whatsapp`) will process the message in real-time, generate the AI response via Claude Haiku, and reply straight back to your thread!
+
